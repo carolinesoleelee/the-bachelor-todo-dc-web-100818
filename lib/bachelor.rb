@@ -5,7 +5,7 @@ if season == seasons
       contestants.each do |contestant|
         contestant.each do |key, value|
           if "Winner" == value
-            return contestant["name"].split(" ").shift
+            return contestant["name"].shift
           end
         end
       end
