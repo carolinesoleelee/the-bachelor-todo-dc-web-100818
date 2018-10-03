@@ -47,7 +47,7 @@ def count_contestants_by_hometown(data, hometown)
     end
   end
   x
-end	
+end
 
 
 
@@ -85,8 +85,4 @@ def get_average_age_for_season(data, season)
      end
    end
  end
-end
-average = ages.inject do |sum, element|
-  sum + element / ages.size
-  average.round
 end
