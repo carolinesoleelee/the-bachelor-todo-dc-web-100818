@@ -1,8 +1,13 @@
 def get_first_name_of_season_winner(data, season)
   data.collect do |season_number,contestants|
     if season == season_number
-
-  end  
+       contestants.collect do |contestant|
+         contestant.collect do |key, value|
+           if value == "winner"
+             return contestant
+         end
+       end
+  end
  end
 end
 
