@@ -79,4 +79,4 @@ end
 average = ages.inject do |sum, element|
   sum + element / ages.size
   avg_age.round
-end	end
+end	
