@@ -36,8 +36,18 @@ end
 
 
 def count_contestants_by_hometown(data, hometown)
-  # code here
-end
+  x = 0
+  data.each do |season, contestants|
+    contestants.each do |contestant|
+      contestant.each do |key, value|
+        if hometown == value
+          x += 1
+        end
+      end
+    end
+  end
+  x
+end	
 
 
 
